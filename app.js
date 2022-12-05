@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, "./frontent/build")))
 
 app.get("*", function (req, res) {
     res.sendFile(
-        path.join(__dirname, "./frontent/build,", "index.html"),
+        path.join(__dirname, "./frontent/build/index.html"),
         function (err) {
             res.status(500).send(err)
         }
